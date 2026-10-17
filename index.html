@@ -1,720 +1,265 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio dan CV Adellya Hasna Khairunisa, mahasiswa Sistem Informasi Universitas Dian Nuswantoro.">
+  <title>Adellya Hasna Khairunisa | Personal Portfolio</title>
 
-    <title>Adellya Hasna Khairunisa - Profil Pribadi</title>
-
-    <!-- CSS Eksternal -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS buatan sendiri -->
+  <link rel="stylesheet" href="style.css">
 </head>
+<body tabindex="0">
 
-<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" id="navbarMain">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="#beranda"><span>AH</span><small>.</small></a>
+    <button class="navbar-toggler" type="button" aria-controls="navContent" aria-expanded="false" aria-label="Buka navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#organisasi">Organisasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="#kontak">Hubungi Saya <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- =========================
-         HEADER / NAVBAR
-    ========================== -->
-    <header class="header">
-
-        <div class="container nav-container">
-
-            <div class="logo">
-                <span>AHK</span>
-            </div>
-
-            <nav class="navbar">
-                <a href="#tentang-saya">Tentang</a>
-                <a href="#pendidikan">Pendidikan</a>
-                <a href="#organisasi">Organisasi</a>
-                <a href="#keahlian">Keahlian</a>
-                <a href="#pengalaman">Proyek</a>
-                <a href="#kontak">Kontak</a>
-            </nav>
-
+<header class="hero-section" id="beranda">
+  <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  <div class="container hero-inner">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7 hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> PORTOFOLIO PRIBADI · 2026</div>
+        <p class="hero-greeting">Halo, perkenalkan saya</p>
+        <h1>Adellya Hasna<br><span>Khairunisa.</span></h1>
+        <div class="hero-role"><span class="role-dot"></span> Mahasiswa Sistem Informasi</div>
+        <p class="hero-description">Mahasiswa Universitas Dian Nuswantoro yang tertarik pada teknologi informasi, pengembangan web, analisis sistem, dan desain UI/UX. Saya senang belajar hal baru, berkolaborasi, dan menciptakan solusi digital yang bermanfaat.</p>
+        <div class="d-flex flex-wrap gap-3 hero-actions">
+          <a href="#tentang" class="btn btn-maroon">Kenali Saya <span aria-hidden="true">↓</span></a>
+          <a href="#proyek" class="btn btn-outline-light btn-outline-soft">Lihat Proyek</a>
         </div>
-
-    </header>
-
-
-    <!-- =========================
-         HERO
-    ========================== -->
-    <section class="hero">
-
-        <div class="container hero-content">
-
-            <div class="hero-text">
-
-                <p class="hero-label">
-                    HALO, SAYA
-                </p>
-
-                <h1>
-                    Adellya Hasna
-                    <span>Khairunisa</span>
-                </h1>
-
-                <h2>
-                    Mahasiswa Sistem Informasi
-                </h2>
-
-                <p class="hero-description">
-                    Mahasiswa Sistem Informasi Universitas Dian Nuswantoro
-                    yang memiliki ketertarikan pada teknologi informasi,
-                    pemrograman, desain UI/UX, dan pengembangan solusi digital.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#tentang-saya" class="btn primary">
-                        Tentang Saya
-                    </a>
-
-                    <a href="#kontak" class="btn secondary">
-                        Hubungi Saya
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="hero-card">
-
-                <div class="profile-circle">
-                    A
-                </div>
-
-                <h3>Adellya Hasna Khairunisa</h3>
-
-                <p>
-                    Information Systems Student
-                </p>
-
-                <div class="profile-info">
-                    <div>
-                        <strong>UDINUS</strong>
-                        <span>Universitas</span>
-                    </div>
-
-                    <div>
-                        <strong>2025</strong>
-                        <span>Mulai Kuliah</span>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="hero-mini-info">
+          <div><strong>UDINUS</strong><span>Universitas</span></div>
+          <div class="mini-divider"></div>
+          <div><strong>Sistem Informasi</strong><span>Program Studi</span></div>
         </div>
-
-    </section>
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
-    <main>
-
-        <!-- =========================
-             TENTANG SAYA
-        ========================== -->
-        <section id="tentang-saya" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>TENTANG SAYA</span>
-                    <h2>Mengenal Saya Lebih Dekat</h2>
-                </div>
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <p>
-                            Halo! Saya <strong>Adellya Hasna Khairunisa</strong>,
-                            mahasiswa Program Studi
-                            <strong>Sistem Informasi</strong> di
-                            <strong>Universitas Dian Nuswantoro (UDINUS)</strong>.
-                        </p>
-
-                        <p>
-                            Saya memiliki ketertarikan pada bidang teknologi
-                            informasi, pemrograman, sistem informasi, desain,
-                            serta pengembangan solusi digital yang dapat
-                            memberikan manfaat bagi pengguna.
-                        </p>
-
-                        <p>
-                            Selain menjalani perkuliahan, saya aktif mengikuti
-                            kegiatan organisasi untuk mengembangkan kemampuan
-                            komunikasi, kerja sama tim, kepemimpinan, dan
-                            pengalaman berorganisasi.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="info-item">
-                            <span>Nama</span>
-                            <strong>Adellya Hasna Khairunisa</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>Status</span>
-                            <strong>Mahasiswa</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>Universitas</span>
-                            <strong>Universitas Dian Nuswantoro</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>Program Studi</span>
-                            <strong>Sistem Informasi</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
+      </div>
+      <div class="col-lg-5">
+        <div class="portrait-wrap">
+          <div class="portrait-backdrop"></div>
+          <div class="portrait-card">
+            <div class="portrait-top"><span>PERSONAL PROFILE</span><span class="tiny-star">✦</span></div>
+            <div class="monogram">A<span>H</span></div>
+            <div class="portrait-caption">
+              <span class="caption-kicker">THE PERSON BEHIND THE IDEAS</span>
+              <h2>Curious mind.<br><em>Creative spirit.</em></h2>
+              <p>Belajar · Berkarya · Bertumbuh</p>
             </div>
-
-        </section>
-
-
-        <!-- =========================
-             PENDIDIKAN
-        ========================== -->
-        <section id="pendidikan" class="section light-section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>PENDIDIKAN</span>
-                    <h2>Riwayat Pendidikan</h2>
-                </div>
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-card">
-
-                            <span class="timeline-year">
-                                2025 - Sekarang
-                            </span>
-
-                            <h3>
-                                Universitas Dian Nuswantoro
-                            </h3>
-
-                            <p>
-                                Program Studi Sistem Informasi
-                            </p>
-
-                            <small>
-                                Perguruan Tinggi
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-card">
-
-                            <span class="timeline-year">
-                                2022 - 2025
-                            </span>
-
-                            <h3>
-                                SMK Negeri 9 Semarang
-                            </h3>
-
-                            <p>
-                                Pendidikan Sekolah Menengah Kejuruan
-                            </p>
-
-                            <small>
-                                SMK
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-card">
-
-                            <span class="timeline-year">
-                                2019 - 2022
-                            </span>
-
-                            <h3>
-                                SMP Negeri 42 Semarang
-                            </h3>
-
-                            <p>
-                                Pendidikan Sekolah Menengah Pertama
-                            </p>
-
-                            <small>
-                                SMP
-                            </small>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ORGANISASI
-        ========================== -->
-        <section id="organisasi" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>ORGANISASI</span>
-                    <h2>Pengalaman Organisasi</h2>
-                </div>
-
-                <div class="organization-grid">
-
-                    <article class="organization-card">
-
-                        <div class="organization-icon">
-                            BEM
-                        </div>
-
-                        <div>
-
-                            <span class="card-label">
-                                ORGANISASI KAMPUS
-                            </span>
-
-                            <h3>
-                                BEM FIK
-                            </h3>
-
-                            <p>
-                                Universitas Dian Nuswantoro
-                            </p>
-
-                            <p>
-                                Aktif dalam Badan Eksekutif Mahasiswa
-                                Fakultas Ilmu Komputer (BEM FIK).
-                                Kegiatan organisasi membantu mengembangkan
-                                kemampuan bekerja sama, berkomunikasi,
-                                mengelola kegiatan, serta bertanggung jawab
-                                terhadap tugas yang diberikan.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="organization-card">
-
-                        <div class="organization-icon">
-                            P
-                        </div>
-
-                        <div>
-
-                            <span class="card-label">
-                                ORGANISASI KAMPUS
-                            </span>
-
-                            <h3>
-                                Paskibra UDINUS
-                            </h3>
-
-                            <p>
-                                Universitas Dian Nuswantoro
-                            </p>
-
-                            <p>
-                                Mengikuti kegiatan Paskibra di Universitas
-                                Dian Nuswantoro. Kegiatan ini memberikan
-                                pengalaman dalam kedisiplinan, kekompakan,
-                                tanggung jawab, dan kerja sama dalam tim.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             KEAHLIAN
-        ========================== -->
-        <section id="keahlian" class="section light-section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>KEAHLIAN</span>
-                    <h2>Skills yang Saya Miliki</h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <!-- HARD SKILLS -->
-                    <div class="skill-card">
-
-                        <h3>
-                            Hard Skills
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Microsoft Office</span>
-                            <span>Desain Grafis</span>
-                            <span>UI/UX Design</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- SOFT SKILLS -->
-                    <div class="skill-card">
-
-                        <h3>
-                            Soft Skills
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>Komunikasi</span>
-                            <span>Kerja Sama Tim</span>
-                            <span>Manajemen Waktu</span>
-                            <span>Problem Solving</span>
-                            <span>Disiplin</span>
-                            <span>Mudah Beradaptasi</span>
-                            <span>Mau Belajar</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PENGALAMAN / PROYEK
-        ========================== -->
-        <section id="pengalaman" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>PENGALAMAN</span>
-                    <h2>Proyek dan Aktivitas</h2>
-                </div>
-
-                <div class="project-grid">
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <h3>
-                            Proyek Website
-                        </h3>
-
-                        <p>
-                            Membuat dan mengembangkan website sederhana
-                            menggunakan HTML, CSS, JavaScript, PHP,
-                            dan database sesuai dengan kebutuhan proyek.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        <h3>
-                            Proyek Sistem Informasi
-                        </h3>
-
-                        <p>
-                            Mempelajari proses analisis dan perancangan
-                            sistem informasi serta pembuatan rancangan
-                            antarmuka pengguna (UI/UX).
-                        </p>
-
-                        <div class="project-tags">
-                            <span>System Analysis</span>
-                            <span>UI/UX</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            03
-                        </div>
-
-                        <h3>
-                            Kegiatan Organisasi
-                        </h3>
-
-                        <p>
-                            Berpartisipasi dalam kegiatan BEM FIK dan
-                            Paskibra UDINUS untuk mengembangkan pengalaman
-                            organisasi, komunikasi, dan kerja sama tim.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>BEM FIK</span>
-                            <span>Paskibra</span>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TUJUAN KARIER
-        ========================== -->
-        <section id="karier" class="career-section">
-
-            <div class="container career-content">
-
-                <div>
-
-                    <span class="career-label">
-                        CAREER GOAL
-                    </span>
-
-                    <h2>
-                        Menjadi IT Consultant
-                    </h2>
-
-                    <p>
-                        Saya memiliki tujuan untuk mengembangkan karier
-                        di bidang teknologi informasi, khususnya sebagai
-                        <strong>IT Consultant</strong>.
-                    </p>
-
-                    <p>
-                        Saya ingin terus meningkatkan kemampuan dalam
-                        bidang sistem informasi, pemrograman, analisis data,
-                        keamanan siber, manajemen proyek, serta teknologi
-                        digital.
-                    </p>
-
-                </div>
-
-                <div class="career-badge">
-                    <span>IT</span>
-                    <strong>CONSULTANT</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             KONTAK
-        ========================== -->
-        <section id="kontak" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <span>KONTAK</span>
-                    <h2>Mari Terhubung</h2>
-                </div>
-
-                <div class="contact-grid">
-
-                    <div class="contact-text">
-
-                        <h3>
-                            Punya pertanyaan atau ingin terhubung?
-                        </h3>
-
-                        <p>
-                            Silakan hubungi saya melalui beberapa platform
-                            berikut.
-                        </p>
-
-                    </div>
-
-
-                    <div class="contact-list">
-
-                        <a
-                            href="mailto:adellyahasna3@gmail.com"
-                            class="contact-item"
-                        >
-
-                            <div class="contact-icon">
-                                @
-                            </div>
-
-                            <div>
-                                <span>Email</span>
-                                <strong>
-                                    adellyahasna3@gmail.com
-                                </strong>
-                            </div>
-
-                        </a>
-
-
-                        <a
-                            href="https://www.instagram.com/adellyaaa.h"
-                            target="_blank"
-                            class="contact-item"
-                        >
-
-                            <div class="contact-icon">
-                                IG
-                            </div>
-
-                            <div>
-                                <span>Instagram</span>
-                                <strong>
-                                    @adellyaaa.h
-                                </strong>
-                            </div>
-
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="contact-item"
-                        >
-
-                            <div class="contact-icon">
-                                IN
-                            </div>
-
-                            <div>
-                                <span>LinkedIn</span>
-                                <strong>
-                                    Profil LinkedIn
-                                </strong>
-                            </div>
-
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="contact-item"
-                        >
-
-                            <div class="contact-icon">
-                                GH
-                            </div>
-
-                            <div>
-                                <span>GitHub</span>
-                                <strong>
-                                    Profil GitHub
-                                </strong>
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="footer">
-
-        <div class="container">
-
-            <h3>
-                Adellya Hasna Khairunisa
-            </h3>
-
-            <p>
-                Mahasiswa Sistem Informasi -
-                Universitas Dian Nuswantoro
-            </p>
-
-            <div class="footer-line"></div>
-
-            <p class="copyright">
-                &copy; 2026 Adellya Hasna Khairunisa.
-                All Rights Reserved.
-            </p>
-
+            <div class="portrait-number">01 / 06</div>
+          </div>
+          <div class="floating-stamp"><span>✦</span><br>LET'S<br>GROW</div>
         </div>
+      </div>
+    </div>
+    <a href="#tentang" class="scroll-cue"><span></span> SCROLL TO EXPLORE</a>
+  </div>
+</header>
 
-    </footer>
+<main>
+  <section class="section-pad" id="tentang">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">01 / ABOUT ME</span>
+        <h2>Lebih dekat <em>dengan saya.</em></h2>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7">
+          <div class="about-panel h-100">
+            <div class="quote-mark">“</div>
+            <p class="about-lead">Saya percaya setiap pengalaman adalah kesempatan untuk berkembang.</p>
+            <p>Halo! Saya <strong>Adellya Hasna Khairunisa</strong>, mahasiswa Program Studi Sistem Informasi di Universitas Dian Nuswantoro (UDINUS). Saya memiliki minat pada teknologi, pemrograman, sistem informasi, serta desain antarmuka pengguna.</p>
+            <p>Di luar perkuliahan, saya aktif mengikuti kegiatan organisasi yang membantu saya mengasah komunikasi, kerja sama tim, kedisiplinan, dan rasa tanggung jawab. Saya juga senang menonton film dan bepergian untuk mendapatkan pengalaman baru.</p>
+            <div class="about-signature">Adellya Hasna Khairunisa <span>— terus bertumbuh</span></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="details-panel h-100">
+            <span class="panel-label">DATA PRIBADI</span>
+            <div class="detail-row"><span class="detail-icon">✳</span><div><small>Nama lengkap</small><strong>Adellya Hasna Khairunisa</strong></div></div>
+            <div class="detail-row"><span class="detail-icon">⌂</span><div><small>Universitas</small><strong>Universitas Dian Nuswantoro</strong></div></div>
+            <div class="detail-row"><span class="detail-icon">▤</span><div><small>Program studi</small><strong>Sistem Informasi</strong></div></div>
+            <div class="detail-row"><span class="detail-icon">♡</span><div><small>Minat</small><strong>Teknologi · UI/UX · Analisis Sistem</strong></div></div>
+            <div class="detail-row"><span class="detail-icon">◎</span><div><small>Karakter</small><strong>Adaptif, komunikatif, suka belajar</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad section-tinted" id="pendidikan">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">02 / EDUCATION</span>
+        <h2>Perjalanan <em>pendidikan.</em></h2>
+        <p>Langkah demi langkah untuk membangun fondasi pengetahuan dan keterampilan.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-card"><span class="timeline-date">2025 — SEKARANG</span><h3>Universitas Dian Nuswantoro</h3><p>Program Studi Sistem Informasi</p><span class="timeline-tag">Perguruan Tinggi</span></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-card"><span class="timeline-date">2022 — 2025</span><h3>SMK Negeri 9 Semarang</h3><p>Pendidikan Sekolah Menengah Kejuruan</p><span class="timeline-tag">Sekolah Menengah Kejuruan</span></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-card"><span class="timeline-date">2019 — 2022</span><h3>SMP Negeri 42 Semarang</h3><p>Pendidikan Sekolah Menengah Pertama</p><span class="timeline-tag">Sekolah Menengah Pertama</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="organisasi">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">03 / ORGANIZATION</span>
+        <h2>Bertumbuh melalui <em>organisasi.</em></h2>
+        <p>Belajar mengambil peran, membangun relasi, dan bekerja bersama.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="experience-card">
+            <div class="experience-top"><div class="experience-symbol">BEM</div><span class="experience-type">KAMPUS</span></div>
+            <h3>Badan Eksekutif Mahasiswa FIK</h3>
+            <p class="experience-subtitle">BEM FIK · Universitas Dian Nuswantoro</p>
+            <p>Berpartisipasi dalam kegiatan organisasi mahasiswa untuk mengembangkan komunikasi, koordinasi, manajemen kegiatan, kerja sama tim, dan tanggung jawab terhadap tugas.</p>
+            <div class="chip-row"><span>Kolaborasi</span><span>Komunikasi</span><span>Organisasi</span></div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="experience-card">
+            <div class="experience-top"><div class="experience-symbol symbol-light">P</div><span class="experience-type">KAMPUS</span></div>
+            <h3>Paskibra UDINUS</h3>
+            <p class="experience-subtitle">Universitas Dian Nuswantoro</p>
+            <p>Mengikuti kegiatan Paskibra untuk melatih kedisiplinan, kekompakan, ketelitian, tanggung jawab, dan kemampuan bekerja dalam tim.</p>
+            <div class="chip-row"><span>Disiplin</span><span>Kekompakan</span><span>Tanggung jawab</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad section-dark" id="keahlian">
+    <div class="container">
+      <div class="section-heading heading-light">
+        <span class="section-index">04 / SKILLS</span>
+        <h2>Hal yang sedang <em>saya kembangkan.</em></h2>
+        <p>Kumpulan keterampilan yang saya pelajari dan terus tingkatkan.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="skill-panel">
+            <div class="skill-panel-heading"><span class="skill-panel-icon">&lt;/&gt;</span><div><h3>Hard Skills</h3><p>Keterampilan teknis</p></div></div>
+            <div class="skill-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Microsoft Office</span><span>Desain Grafis</span><span>UI/UX Design</span><span>Analisis Sistem</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="skill-panel">
+            <div class="skill-panel-heading"><span class="skill-panel-icon">✦</span><div><h3>Soft Skills</h3><p>Keterampilan personal</p></div></div>
+            <div class="skill-pills"><span>Komunikasi</span><span>Kerja Sama Tim</span><span>Manajemen Waktu</span><span>Problem Solving</span><span>Disiplin</span><span>Adaptasi</span><span>Berpikir Kritis</span><span>Mau Belajar</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="learning-strip"><span class="learning-icon">↗</span><div><strong>Currently learning</strong><p>SQL · Data Analysis · Cyber Security · Project Management</p></div><span class="learning-status">ON PROGRESS</span></div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="proyek">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">05 / PROJECTS</span>
+        <h2>Proyek dan <em>aktivitas.</em></h2>
+        <p>Contoh bidang yang saya eksplorasi selama belajar Sistem Informasi.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-art art-one"><span class="art-number">01</span><div class="browser-window"><div class="browser-dots">● ● ●</div><div class="browser-line"></div><div class="browser-line short"></div><div class="browser-block"></div></div></div>
+            <div class="project-content"><span class="project-category">WEB DEVELOPMENT</span><h3>Website Profil Pribadi</h3><p>Membangun halaman profil responsif menggunakan HTML, CSS, dan Bootstrap untuk menampilkan informasi diri secara terstruktur.</p><div class="chip-row"><span>HTML</span><span>CSS</span><span>Bootstrap 5</span></div></div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-art art-two"><span class="art-number">02</span><div class="ui-window"><div class="ui-top"></div><div class="ui-circle"></div><div class="ui-line"></div><div class="ui-line small"></div><div class="ui-button"></div></div></div>
+            <div class="project-content"><span class="project-category">UI/UX DESIGN</span><h3>Rancangan Antarmuka</h3><p>Mengeksplorasi perancangan antarmuka yang jelas dan mudah digunakan dengan memperhatikan kebutuhan pengguna.</p><div class="chip-row"><span>UI/UX</span><span>Wireframe</span><span>Prototype</span></div></div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-art art-three"><span class="art-number">03</span><div class="database-visual"><div></div><div></div><div></div></div><span class="data-label">DATA · PROCESS · INSIGHT</span></div>
+            <div class="project-content"><span class="project-category">SYSTEM ANALYSIS</span><h3>Analisis Sistem Informasi</h3><p>Mempelajari proses bisnis, kebutuhan pengguna, perancangan basis data, dan pemodelan sistem informasi.</p><div class="chip-row"><span>Database</span><span>SQL</span><span>System Analysis</span></div></div>
+          </article>
+        </div>
+      </div>
+      <p class="project-note"><span>✦</span> Proyek di atas menggambarkan bidang pembelajaran dan eksplorasi. Tambahkan tautan repositori atau demo apabila proyek sudah dipublikasikan.</p>
+    </div>
+  </section>
+
+  <section class="career-section" id="karier">
+    <div class="container">
+      <div class="career-box">
+        <div class="career-decoration">NEXT<br>CHAPTER</div>
+        <div class="career-content">
+          <span class="section-index">06 / CAREER GOAL</span>
+          <h2>Menuju masa depan sebagai<br><em>IT Consultant.</em></h2>
+          <p>Saya ingin terus memperdalam kemampuan analisis sistem, teknologi digital, dan pemecahan masalah agar dapat membantu organisasi menemukan solusi teknologi yang tepat dan bermanfaat.</p>
+          <a href="#kontak" class="btn btn-cream">Mari Terhubung <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="career-seal"><span>IDEAS</span><strong>→</strong><span>SOLUTIONS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad contact-section" id="kontak">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-index">LET'S CONNECT</span>
+        <h2>Mari mulai <em>terhubung.</em></h2>
+        <p>Terbuka untuk berbagi ide, belajar bersama, dan membangun kolaborasi.</p>
+      </div>
+      <div class="row g-3 justify-content-center contact-row">
+        <div class="col-md-6 col-lg-3"><a class="contact-card" href="mailto:adellyahasna3@gmail.com"><span class="contact-symbol">@</span><span><small>EMAIL</small><strong>Kirim Email</strong></span><b>↗</b></a></div>
+        <div class="col-md-6 col-lg-3"><a class="contact-card" href="https://www.instagram.com/adellyaaa.h" target="_blank" rel="noopener noreferrer"><span class="contact-symbol">ig</span><span><small>INSTAGRAM</small><strong>@adellyaaa.h</strong></span><b>↗</b></a></div>
+        <div class="col-md-6 col-lg-3"><a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span class="contact-symbol">in</span><span><small>LINKEDIN</small><strong>Tambahkan profil</strong></span><b>↗</b></a></div>
+        <div class="col-md-6 col-lg-3"><a class="contact-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="contact-symbol">gh</span><span><small>GITHUB</small><strong>Tambahkan akun</strong></span><b>↗</b></a></div>
+      </div>
+      <p class="contact-hint">Catatan: ganti tautan LinkedIn dan GitHub dengan akun pribadi sebelum website dipublikasikan.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="footer-brand" href="#beranda">AH<span>.</span></a>
+    <p>Dirancang dengan semangat untuk terus belajar dan berkembang.</p>
+    <span class="footer-copy">© 2026 Adellya Hasna Khairunisa</span>
+  </div>
+</footer>
+
+
 
 </body>
 </html>
